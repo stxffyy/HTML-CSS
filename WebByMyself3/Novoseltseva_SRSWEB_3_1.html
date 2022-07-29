@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #kitchen_m_end, #floor_start, #floor_end {
+            width: 169px;
+        }
+        #city, #metro {
+            width: 357.5px;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Продажа квартир КВАДРИТО</strong></h1>
+    <p>Заполните форму ниже о квартире, которую хотите выставить на продажу.</p>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <font><strong>Город:</strong></font>
+                </td>
+                <td colspan="2">
+                    <select aria-placeholder="Выберите город для продажи" name="city" id="city">
+                        <option value="-1">Выберите город для продажи___________________________________</option>
+                        <option value="0">Москва</option>
+                        <option value="1">Санкт-Петербург</option>
+                        <option value="2">Новосибирск</option>
+                        <option value="3">Воронеж</option>
+                        <option value="4">Вологда</option>
+                        <option value="5">Магадан</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font><strong>Материал здания</strong></font>
+                </td>
+                <td>
+                    <input type="checkbox" name="kirpitch" id="kir">
+                    <label for="kir">
+                    <span>Кирпич</span></label> <br>
+
+                    <input type="checkbox" name="block" id="blo">
+                    <label for="blo"><span>Блоки</span> </label><br>
+                    <input type="checkbox" name="monolit" id="mono">
+                    <label for="mono"><span>Монолит</span> </label> <br>
+
+                    <input type="checkbox" name="panel" id="pan">
+                    <label for="pan"><span>Панель</span></label> <br>
+
+                    <input type="checkbox" name="derevo" id="tree">
+                    <label for="tree"><span>Дерево</span></label> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font><strong>Общая площадь (м<sup>2</sup>) </strong></font>
+                </td>
+                <td>
+                    <input type="text" name="basic_m_start" placeholder="от" size="21">
+                </td>
+                <td>
+                    <input type="text" name="basic_m_end" placeholder="до" size="21">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font><strong>Площадь кухни (м<sup>2</sup>) </strong></font>
+                </td>
+                <td>
+                    <input type="text" name="kitchen_m_start" id="kitchen_m_start" placeholder="от" size="21">
+                </td>
+                <td>
+                    <input type="text" name="kitchen_m_end" id="kitchen_m_end" placeholder="до" ышяу="21">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font><strong>Жилая площадь (м<sup>2</sup>)</strong></font>
+                </td>
+                <td>
+                    <input type="text" name="live_m_start" placeholder="от" size="21">
+                </td>
+                <td>
+                    <input type="text" name="live_m_end" placeholder="до" size="21">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font><strong>Год постройки</strong></font>
+                </td>
+                <td>
+                    <input type="text" name="years_start" placeholder="от" size="21">
+                </td>
+                <td><input type="text" name="years_end" placeholder="до" size="21"></td>
+            </tr>
+            <tr>
+                <td>
+                    <font><strong>Этаж</strong></font>
+                </td>
+                <td>
+                    <input type="text" name="level_start" placeholder="от" size="21">
+                </td>
+                <td>
+                    <input type="text" name="level_end" placeholder="до" size="21">
+                </td>
+                <tr>
+                    <td>
+
+                    </td>
+                <td>
+                     <input type="checkbox" name="not_end">
+                     <span>Не последний</span>
+                </td>
+                </tr>
+            </tr>
+            <td>
+                <font><strong>Этажей в доме</strong></font>
+            </td>
+            <td>
+                <input type="text" name="floor_start" placeholder="от" id="floor_start">
+            </td>
+            <td>
+                <input type="text" name="floor_end" placeholder="до" id="floor_end">
+            </td>
+            <tr>
+                <td>
+                    <font><strong>До метро (по карте):</strong></font>
+                </td>
+                <td colspan="2">
+                    <select name="metro" id="metro">
+                        <option value="-1">Выберите расстояние__________________________________________</option>
+                        <option value="0">Не важно</option>
+                        <option value="1">До 1 км</option>
+                        <option value="2">До 3 км</option>
+                        <option value="3">До 5 км</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><font><strong>Продавец</strong></font></td>
+
+            <td>
+                <input type="radio" id="notmatter" name="saler" value="0">
+                <label for="notmatter"><span>Не важно</span></label> <br>
+
+                <input type="radio" id="agent" name="saler" value="1">
+                <label for="agent"><span>Агенство</span></label><br>
+
+                <input type="radio" name="man" name="saler" value="2">
+                <label for="man"><span>Собственник</span></label><br>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" name="sendData" value="sendData">Показать предложения</button>
+                </td>
+                <td>
+                    <button type="reset" name="resetData" value="resetdata">Сбросить фильтры</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
