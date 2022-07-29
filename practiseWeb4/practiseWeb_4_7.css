@@ -1,0 +1,11 @@
+body {
+    background-color: #336666;
+}
+h1,h2,p::first-letter {
+    font-size: 1.5em;
+    color: red;
+}
+h3 {
+    margin-top: 25px;
+    border-top: 2px solid black;
+}
