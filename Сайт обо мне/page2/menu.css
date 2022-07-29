@@ -1,0 +1,31 @@
+body {
+    background-color: #CFB69C;
+}
+
+ul {
+list-style-type:circle;
+}
+ 
+ ul > li > a {
+    text-decoration: none;
+    color: black;
+ }
+
+ ul > li > a:hover {
+    font-weight:bold ;
+ }
+
+ h1 {
+    text-align: center;
+ }
+
+  @media screen and (max-width:768px) and (min-width: 321px) {
+
+      body,
+      html {
+          height: 100%;
+          background-color: white;
+      }
+
+  }
+ 

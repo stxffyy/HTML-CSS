@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Addict Cafe</title>
+    <style>
+        .name {
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        footer {
+            border-top: 1px solid #CFB69C;
+            text-align: center;
+    
+        }
+        .picture {
+            position: relative;
+            z-index: 2;
+            transition: transform 1s;
+        }
+
+        .picture:hover {
+            transform: scaleX(-1);
+        }
+
+         @media screen and (max-width:768px) and (min-width: 321px) {
+
+     body, html {
+        height: 100%;
+        background-color: white;
+     }
+
+  }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="name">Фото</td>
+            <td class="name">Описание</td>
+            <td class="name">Оценка</td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <img src="/images/cafe.jpg" alt="Кафе" width="300px" class="picture">
+            </td>
+            <td>
+                <p>Addict находится неподалеку от Каменноостровского проспeкт. Многие посетители приходят сюда, чтобы попробовать
+                    аппетитные тосты с авокадо, поке и жареный сыр. Приятно проведите здесь время с друзьями и закажите хорошее
+                    печенье и
+                    вкусно приготовленные сырники. Закажите неплохой латте или вкусный смузи.
+            
+                    Гости утверждают, что бариста в этом месте замечательный. Оценка этого заведения 4.4 на Google.</p>
+            </td>
+            <td>5.0</td>
+        </tr>
+    </table>
+    <footer>
+        <p>Copyright © <time datetime="2022">2022</time> Kate's Cooperation</p>
+        <address>St. Petersburg, Russia.</address>
+    </footer>
+</body>
+</html>
