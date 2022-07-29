@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+} /* задаём свойства всем элементам */
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    } /* Указываем ключевой кадр для анимации rotate.
+        Элемент будет выполнять ф-ию, которая поворачивает элемент на 360 градусов по часовой стрелке.*/
+}
+
+.wrap {
+    width: 200px;
+    height: 150px;
+    outline: 1px solid #000;
+    display: inline-block;
+    margin: 35px 50px;
+} /*Задаём хар-ки div'ам с классом wrap. */
+
+.wrap>div {
+    width: 200px;
+    height: 150px;
+    background: rgba(144, 235, 242, 0.5);
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    animation: rotate 6s linear infinite; /* Анимация rotate длится 6s бесконечно, linear - значит, что ф-ия линейная,
+        анимация происходит равномерно на протяжении всего времени, без колебаний в скорости.*/
+} /* Задаём характеристики div'ам внутри wrap*/
+
+.wrap>div>span {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+} /* Задаём характеристики span'ам*/
+
+/*Устанавим координаты точки, относительно которой будет происходить трансформация элемента*/
+
+.element-1 {
+    transform-origin: 50% 50%; /*Точка по центру*/
+}
+
+.element-2 {
+    transform-origin: top left; /* Точка сверху в левом углу*/
+}
+
+.element-3 {
+    transform-origin: 100% 0%; /*Точка в крайнем (правом) углу по X */
+}
+
+.element-4 {
+    transform-origin: 50px 50px; /*Точка в 50пкс по X и Y */
+}

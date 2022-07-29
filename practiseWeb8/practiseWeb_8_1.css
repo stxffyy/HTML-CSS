@@ -1,0 +1,66 @@
+body {
+    background-color: #cecece;
+    padding: 32px;
+} /* Задаем хар-ки body - цвет фона и внутр. отступ*/
+
+button {
+    margin: 25px 15px; /* Внешние отступы*/
+    border: none; /* Границу убираем*/
+    border-radius: 5px; /* Скругляем границу*/
+    border: 1px solid lime; /*Свойства для гарницы */
+    padding: 15px 35px; /*Внутренние отступы */
+}  /*Задаём хар-ки для кнопки */
+
+
+button:hover {
+    outline: 1px solid white;
+    outline-offset: -2px;
+    cursor: pointer;
+} /* Задаем хар-ки при наведении на кнопки*/
+
+.botton1 {
+    background-image: linear-gradient(#76B9CC, #97cc76);
+} /*Градиен от голубого к зелёному сверху вниз */
+
+.botton2 {
+    background-image: linear-gradient(#76B9CC, #CC208A,#97cc76); 
+    /*Градиен от голубого к розовому к зелёному сверху вниз */
+}
+
+.botton3 {
+    background-image: linear-gradient(#76B9CC, #CC208A, #97cc76, #B34EE9)
+} /*Градиен от голубого к розовому к зелёному к сиреневому сверху вниз */
+
+.botton4 {
+    background-image: linear-gradient(blue 5%, lime 30%,
+            #97cc76 80%, #B34EE9 90%);
+} /*Градиен от синего (5%) к зелёному (30%) к светло-зеленому (80%) к сиреневому (90%) сверху вниз */
+
+.botton5 {
+    background-image: linear-gradient(blue 5px, lime 15px,
+            white 30px, black 50px);
+} /*Градиен от синего к зелёному к белому к черному сверху вниз, размер в пикселях */
+
+.botton6 {
+    background-image: linear-gradient(25deg, blue, lime);
+} /*Угловой градиен от голубого к зелёному снизу вверх  */
+
+.botton7 {
+    background-image: radial-gradient(red 0%, yellow 30%);
+} /* Радиальный градиент с разнесенными цветовыми точками */
+
+.botton8 {
+    background-image: radial-gradient(at top right, red,
+            yellow);
+}  /* Радиальный градиент с равномерно расположенными цветными точками вниз влево */
+
+.botton9 {
+    background-image: radial-gradient(farthest-corner at 25% 50%,
+            #f35 0%, #43e 100%);
+} /* Градиент заканчивается у дальней от центра границы элемента;*/
+
+.botton10 {
+    background-image: radial-gradient(15px 15px at 85% 25%,
+            #f35 0%, #43e 100%);
+
+}  /* Радиальный градиент с разнесенными цветовыми точками и координатами*/

@@ -1,0 +1,34 @@
+body {
+    background-color: #cecece; /* Задаем цвет фону */
+    padding: 32px; /* Задаём внутренние отступы */
+}
+button {
+    margin: 25px 15px; /* Задаем внешние отступы - 25 сверху и снизу, 15 справа и слева */
+    border: none; /* Убираем границы */
+    border-radius: 5px; /* Скругляем границы */
+    border: 1px solid lime; /* Задаём хар-ки границам */
+    padding: 15px 35px; /* Задаем внутренние отступы */
+}
+button:hover {
+    outline: 1px solid white; /* Задаём хар-ки границам */
+    outline-offset: -2px; /* Устанавливает расстояние между рамкой,
+        созданной с помощью свойства outline,
+        и границей элемента добавленной через border. */
+    cursor: pointer; /* Задаём вид курсора */
+}
+.button1 {
+    background-color: #2563E9; /* Задаём цвет фона */
+    transition: 1s; /* Задаём скорость анимации, действие - смена цвета */
+}
+.button1:hover {
+    background-color: #4478E9; /* Задаём цвет фона при наведении курсора*/
+}
+.button2 {
+    background-color: #2563E9; /* Задаём цвет фона */
+    transition: 1s; /* Задаём скорость анимации, действие - смена цвета */
+    transition-property: background; /* Анимируется только бэкграунд */
+}
+.button2:hover {
+    background-color: #E95AD1; 
+    outline: none;
+}

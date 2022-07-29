@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+} /*Обнуляем отступы для всех эл-ов и задаём шрифт */
+
+body {
+    text-align: center;
+} /*Устанавливаем текст по центру */
+
+h1 {
+    margin: 35px auto;
+    text-align: center;
+} /*заголовок и текст устанавливаем по центру */
+
+.container__persona {
+    perspective: 1000px; /* расстояние от плоскости экрана до точки сходимости линий; задаёт, насколько выражен эффект перспективы */
+    width: 250px;
+    height: 300px;
+    margin: 0 15px;
+    display: inline-block;
+} /*Задаём хар-ки классу container__persona - перспетиву, ширину, высоту, внешние отступы, display*/
+
+.persona {
+    position: relative;
+    cursor: pointer;
+    width: 250px;
+    height: 300px;
+    transition: 1s; /* время исполнения анимации */
+    transform-style: preserve-3d; /* Дочерние элементы будут отображаться в 3D-пространстве */
+} /*Задаём хар-ки классу persona*/
+
+.container__persona:hover .persona {
+    transform: rotateY(180deg);
+}/* При наведении на container__persona, persona выполняет ф-ию деформации его стороны относительно оси Y на 180 градусов. */
+
+.persona__foto {
+    width: 250px;
+    height: 300px;
+    overflow: hidden; /*Контент обрезается, без предоставления прокрутки. */
+    z-index: 2; /*Данный класс будет вторым слоем и отображаться поверх первого слоя */
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /*Задняя поверхность скрыта, что делает элемент невидимым, когда он повёрнутый от пользователя. */
+    border-radius: 15px;
+} /*Задаём хар-ки классу persona__foto - ширину, высоту, позиционирование, границы И др*/
+
+.persona__info {
+    background-color: #000;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /*Данныц класс будет первым слоем */
+    backface-visibility: hidden; /*Задняя поверхность скрыта, что делает элемент невидимым, когда он повёрнутый от пользователя. */
+    transform: rotateY(180deg); /*При наведении на container__persona, persona выполняет ф-ию деформации его стороны относительно оси Y на 180 градусов. */
+    border-radius: 15px;
+} /*Задаём хар-ки классу persona__info - цвет фона, ширину, высоту, позиционирование, границы и др*/
+
+.persona__info>h3 {
+    padding-top: 15px;
+    color: #f3f3f3;
+} /* Задаём хар-ки заголовку h3*/
+
+.persona__info>a {
+    color: #f3f3f3;
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+} /* Задаём хар-ки заголовку cсылкам*/
+
+.persona__info>a>i {
+    color: #fff;
+    font-size: 32px;
+    display: block;
+    margin-bottom: 10px;
+} /* Задаём хар-ки заголовку тегу i*/

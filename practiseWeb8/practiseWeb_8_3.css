@@ -1,0 +1,38 @@
+body {
+    background-color: #cecece;
+    padding: 0;
+}
+div {
+    width: 40px; /* Задаём ширину */
+    height: 40px; /* Задаём высоту */
+    position: relative; /*Относительное позиционирование */
+    left: 10px; /* *Позициионирование div-элемента от левого края */
+    transition: 1s; /* Задаём скорость анимации, действие - смена цвета */
+}
+.container {
+    width: 100%; /* Задаём макс. ширину*/
+    height: 100%; /* Задаём макс. высоту*/
+}
+.container:hover div{
+    left: 500px; /*Позициионирование div-элемента от левого края при наведении курсором на container */
+}
+.ease {
+    background-color: blue; /*Задаём цвет */
+    transition-timing-function: ease; /*Задаём функцию для div с классом ease */
+}
+.linear {
+    background-color: lime; /*Задаём цвет */
+    transition-timing-function: linear; /*Задаём функцию для div с классом linear */
+}
+.ease-in {
+    background-color: mediumseagreen; /*Задаём цвет */
+    transition-property: ease-in; /*Задаём функцию для div с классом ease-in */
+}
+.ease-out {
+    background-color: orangered; /*Задаём цвет */
+    transition-timing-function: ease-out; /*Задаём функцию для div с классом ease-out */
+}
+.ease-in-out {
+    background-color: darkviolet; /*Задаём цвет */
+    transition-timing-function: ease-in-out; /*Задаём функцию для div с классом ease-in-out */
+}
